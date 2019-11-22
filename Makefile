@@ -1,12 +1,12 @@
 
-JSMN=zserge-jsmn-6979f2e6ffa5/
+JSMN=jsmn
 
 CFLAGS+=-I${JSMN}/ -g
 LDFLAGS+=-lcurl -g
 
-OBJFILES=fetch.o ${JSMN}/jsmn.o
+OBJFILES=fetch.o 
 
-fetch: fetch.o ${JSMN}/jsmn.o
+fetch: fetch.o 
 
 clean:
 	rm -f ${OBJFILES}
